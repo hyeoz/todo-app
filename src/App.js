@@ -59,7 +59,11 @@ function App() {
   );
 
   return (
-    <TodoTemplate className="App">
+    <TodoTemplate
+      className="App"
+      done={todos.filter((todo) => todo.checked === true).length}
+      all={todos.length}
+    >
       <TodoInsert onInsert={onInsert} />
       <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
     </TodoTemplate>

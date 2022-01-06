@@ -5,6 +5,7 @@
   margin-right: auto;
   border-radius: 4px;
   overflow: hidden;
+  font-family: 'Jua', sans-serif;
 
   .app-title {
     background: #22b8cf;
@@ -16,7 +17,15 @@
     justify-content: center;
   }
 
+  .highlight {
+    color: black;
+  }
+
   .content {
     background: white;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
